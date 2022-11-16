@@ -11,7 +11,7 @@ A chat app that I am making in iOS developer course using SwiftUI and Firebase
 
 ## Firebase Project Configuration
 
-1 - Create new project:
+1. Create new project:
 
 ![image](https://user-images.githubusercontent.com/20096045/202316589-5b57d993-248a-47a8-a9f0-3edfffc4a897.png)
 
@@ -21,7 +21,7 @@ A chat app that I am making in iOS developer course using SwiftUI and Firebase
 
 ![image](https://user-images.githubusercontent.com/20096045/202316834-9aa03474-5ff8-46d1-90d3-eeda85153c38.png)
 
-2 - Add Firebase in your project, select iOS+ option:
+2. Add Firebase in your project, select iOS+ option:
 
 ![image](https://user-images.githubusercontent.com/20096045/202317017-19853ee7-3518-4642-836b-6b105b3b9da1.png)
 
@@ -29,7 +29,7 @@ A chat app that I am making in iOS developer course using SwiftUI and Firebase
 
 Note: Type the exactaly bundle id of your app project
 
-3 - Download and put GoogleService-Info.plist in your project:
+3. Download and put GoogleService-Info.plist in your project:
 
 ![image](https://user-images.githubusercontent.com/20096045/202317343-d33ceb0e-6ef5-47e6-b948-3351ceb5d851.png)
 
@@ -37,13 +37,13 @@ Note: Type the exactaly bundle id of your app project
 
 Note: Don't forget adding GoogleService-Info.plist in .gitignore file.
 
-4 - Add Firebase SDK in SPM(Swift Package Manager):
+4. Add Firebase SDK in SPM(Swift Package Manager):
 
 ![image](https://user-images.githubusercontent.com/20096045/202318074-432459c6-6c0e-4474-ab57-e680f06d6212.png)
 
 Note: In this project, we need Auth, FirestoreDatabase and Storage services
 
-5 - Import Firebase on your project:
+5. Import Firebase on your project:
 
 ![image](https://user-images.githubusercontent.com/20096045/202318396-da76dfa1-3c4f-4af3-bf95-d81f592b648b.png)
 
