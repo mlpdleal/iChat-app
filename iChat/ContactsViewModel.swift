@@ -12,11 +12,20 @@ class ContactsViewModel: ObservableObject {
     
     @Published var contacts: [Contact] = []
     
+    @Published var isLoading = false
+    
+    var isLoaded = false
+    
     func getContacts() {
+        if isLoaded { return }
+        self.isLoaded = true
+        
+        self.isLoading = true
         Firestore.firestore().collection("users")
             .getDocuments{ querySnapshot, error in
                 if let error = error {
                     print("Erro ao buscar contatos: \(error)")
+                    self.isLoading = false
                     return
                 }
                 
@@ -26,6 +35,8 @@ class ContactsViewModel: ObservableObject {
                                             name: document.data()["name"] as! String,
                                             profileUrl: document.data()["profileUrl"] as! String))
                 }
+                
+                self.isLoading = false
             }
     }
 }

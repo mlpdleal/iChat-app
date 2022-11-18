@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA55354C29283098009D7E9B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55354B29283098009D7E9B /* Message.swift */; };
+		EA55354E292830CB009D7E9B /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55354D292830CB009D7E9B /* ChatViewModel.swift */; };
+		EA5535502928335E009D7E9B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55354F2928335E009D7E9B /* ChatView.swift */; };
 		EA569C9C292433E9002D2193 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA569C9B292433E9002D2193 /* SignInViewModel.swift */; };
 		EA569C9E292460C4002D2193 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA569C9D292460C4002D2193 /* SignUpView.swift */; };
 		EA569CA029246108002D2193 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA569C9F29246108002D2193 /* SignUpViewModel.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA55354B29283098009D7E9B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EA55354D292830CB009D7E9B /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		EA55354F2928335E009D7E9B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		EA569C9B292433E9002D2193 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EA569C9D292460C4002D2193 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EA569C9F29246108002D2193 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -93,10 +99,13 @@
 				EAA424CF2926B0AD00C70BF0 /* MessagesView.swift */,
 				EAA424D12926B0D000C70BF0 /* MessagesViewModel.swift */,
 				EAA424D32926CE7500C70BF0 /* ContactsView.swift */,
-				EAB8581628EBB05800906D83 /* Assets.xcassets */,
-				EAB8581828EBB05800906D83 /* Preview Content */,
 				EAA424D52926D0BE00C70BF0 /* ContactsViewModel.swift */,
 				EAA424D72926D0EE00C70BF0 /* Contact.swift */,
+				EA55354B29283098009D7E9B /* Message.swift */,
+				EA55354D292830CB009D7E9B /* ChatViewModel.swift */,
+				EA55354F2928335E009D7E9B /* ChatView.swift */,
+				EAB8581628EBB05800906D83 /* Assets.xcassets */,
+				EAB8581828EBB05800906D83 /* Preview Content */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 				EAA424CE2926AEB400C70BF0 /* ContentViewModel.swift in Sources */,
 				EAA424D62926D0BE00C70BF0 /* ContactsViewModel.swift in Sources */,
 				EAA424D42926CE7500C70BF0 /* ContactsView.swift in Sources */,
+				EA5535502928335E009D7E9B /* ChatView.swift in Sources */,
 				EA569C9E292460C4002D2193 /* SignUpView.swift in Sources */,
 				EAA424D22926B0D100C70BF0 /* MessagesViewModel.swift in Sources */,
 				EAA424D02926B0AD00C70BF0 /* MessagesView.swift in Sources */,
@@ -201,6 +211,8 @@
 				EAA424CA29267D5300C70BF0 /* ImagePicker.swift in Sources */,
 				EAB8581328EBB05700906D83 /* iChatApp.swift in Sources */,
 				EA569C9C292433E9002D2193 /* SignInViewModel.swift in Sources */,
+				EA55354E292830CB009D7E9B /* ChatViewModel.swift in Sources */,
+				EA55354C29283098009D7E9B /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
