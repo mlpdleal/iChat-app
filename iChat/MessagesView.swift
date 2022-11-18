@@ -12,11 +12,33 @@ struct MessagesView: View {
     @StateObject var viewModel = MessagesViewModel()
     
     var body: some View {
-        Button{
-            viewModel.logout()
-        } label: {
-            Text("Logout")
+        NavigationView{
+            VStack{
+                
+            }
+            .toolbar{
+                
+                ToolbarItem(id: "Logout",
+                            placement: ToolbarItemPlacement.navigationBarTrailing,
+                            showsByDefault: true) {
+                    Button{
+                        viewModel.logout()
+                    } label: {
+                        Text("Logout")
+                    }
+                }
+                
+                ToolbarItem(id: "Contacts",
+                            placement: ToolbarItemPlacement.navigationBarLeading,
+                            showsByDefault: true) {
+                    NavigationLink("Contatos", destination: ContactsView())
+                }
+          
+
+            }
         }
+        
+ 
     }
 }
 

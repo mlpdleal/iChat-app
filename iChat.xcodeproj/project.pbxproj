@@ -19,6 +19,9 @@
 		EAA424CE2926AEB400C70BF0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424CD2926AEB400C70BF0 /* ContentViewModel.swift */; };
 		EAA424D02926B0AD00C70BF0 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424CF2926B0AD00C70BF0 /* MessagesView.swift */; };
 		EAA424D22926B0D100C70BF0 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424D12926B0D000C70BF0 /* MessagesViewModel.swift */; };
+		EAA424D42926CE7500C70BF0 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424D32926CE7500C70BF0 /* ContactsView.swift */; };
+		EAA424D62926D0BE00C70BF0 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424D52926D0BE00C70BF0 /* ContactsViewModel.swift */; };
+		EAA424D82926D0EE00C70BF0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA424D72926D0EE00C70BF0 /* Contact.swift */; };
 		EAB8581328EBB05700906D83 /* iChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8581228EBB05700906D83 /* iChatApp.swift */; };
 		EAB8581528EBB05700906D83 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8581428EBB05700906D83 /* SignInView.swift */; };
 		EAB8581728EBB05800906D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB8581628EBB05800906D83 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		EAA424CD2926AEB400C70BF0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		EAA424CF2926B0AD00C70BF0 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		EAA424D12926B0D000C70BF0 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		EAA424D32926CE7500C70BF0 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		EAA424D52926D0BE00C70BF0 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		EAA424D72926D0EE00C70BF0 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		EAB8580F28EBB05700906D83 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB8581228EBB05700906D83 /* iChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatApp.swift; sourceTree = "<group>"; };
 		EAB8581428EBB05700906D83 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -86,8 +92,11 @@
 				EAA424CD2926AEB400C70BF0 /* ContentViewModel.swift */,
 				EAA424CF2926B0AD00C70BF0 /* MessagesView.swift */,
 				EAA424D12926B0D000C70BF0 /* MessagesViewModel.swift */,
+				EAA424D32926CE7500C70BF0 /* ContactsView.swift */,
 				EAB8581628EBB05800906D83 /* Assets.xcassets */,
 				EAB8581828EBB05800906D83 /* Preview Content */,
+				EAA424D52926D0BE00C70BF0 /* ContactsViewModel.swift */,
+				EAA424D72926D0EE00C70BF0 /* Contact.swift */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -179,7 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA424D82926D0EE00C70BF0 /* Contact.swift in Sources */,
 				EAA424CE2926AEB400C70BF0 /* ContentViewModel.swift in Sources */,
+				EAA424D62926D0BE00C70BF0 /* ContactsViewModel.swift in Sources */,
+				EAA424D42926CE7500C70BF0 /* ContactsView.swift in Sources */,
 				EA569C9E292460C4002D2193 /* SignUpView.swift in Sources */,
 				EAA424D22926B0D100C70BF0 /* MessagesViewModel.swift in Sources */,
 				EAA424D02926B0AD00C70BF0 /* MessagesView.swift in Sources */,
