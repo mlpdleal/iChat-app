@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     
+    let toId: String
     let username: String
     @StateObject var viewModel = ChatViewModel()
     
@@ -35,7 +36,8 @@ struct ChatView: View {
                     )
                 
                 Button {
-                    
+                    viewModel.sendMessage(toId: toId)
+                    viewModel.text = ""
                 } label: {
                     Text("Enviar")
                         .padding()
@@ -50,6 +52,9 @@ struct ChatView: View {
         }
         .navigationTitle(username)
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear{
+            viewModel.onAppear(toId: toId)
+        }
     }
 }
 
@@ -72,6 +77,6 @@ struct messageRow: View {
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView(username: "Test")
+        ChatView(toId: UUID().uuidString ,username: "Test")
     }
 }
