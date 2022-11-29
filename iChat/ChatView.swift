@@ -14,12 +14,29 @@ struct ChatView: View {
     
     @State var textSize: CGSize = .zero
     
+    @Namespace var bottonID
+    
     var body: some View {
         VStack {
-            ScrollView(showsIndicators: false){
-                ForEach(viewModel.messages, id: \.self) { message in
-                    messageRow(message: message)
+            
+            ScrollViewReader{ value in
+                ScrollView(showsIndicators: false){
+                    ForEach(viewModel.messages, id: \.self) { message in
+                        messageRow(message: message)
+                    }
+                    .onChange(of: viewModel.messages.count) { newValue in
+                        print("count is \(newValue)")
+                        withAnimation{
+                            value.scrollTo(bottonID)
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    
+                    Color.clear
+                        .frame(height: 1)
+                        .id(bottonID)
                 }
+                
             }
             
             Spacer()
