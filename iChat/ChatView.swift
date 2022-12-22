@@ -21,21 +21,37 @@ struct ChatView: View {
             
             ScrollViewReader{ value in
                 ScrollView(showsIndicators: false){
-                    ForEach(viewModel.messages, id: \.self) { message in
-                        messageRow(message: message)
-                    }
-                    .onChange(of: viewModel.messages.count) { newValue in
-                        print("count is \(newValue)")
-                        withAnimation{
-                            value.scrollTo(bottonID)
-                        }
-                    }
-                    .padding(.horizontal, 20)
-                    
                     Color.clear
                         .frame(height: 1)
                         .id(bottonID)
+                    
+                    LazyVStack{
+                        ForEach(viewModel.messages, id: \.self) { message in
+                            messageRow(message: message)
+                                .scaleEffect(x: 1.0, y: -1.0, anchor: .center)
+                                .onAppear{
+                                    if message == viewModel.messages.last && viewModel.messages.count >= viewModel.limit {
+                                        viewModel.onAppear(contact: contact)
+                                    }
+                                }
+                        }
+                        .onChange(of: viewModel.newCount) { newValue in
+                            print("count is \(newValue)")
+                            if newValue > viewModel.messages.count {
+                                withAnimation{
+                                    value.scrollTo(bottonID)
+                                }
+                                
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                        
+                    }
+                    
+
                 }
+                .rotationEffect(Angle(degrees: 180))
+                .scaleEffect(x: -1.0, y: 1.0, anchor: .center)
                 
             }
             
